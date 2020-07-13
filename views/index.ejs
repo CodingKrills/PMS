@@ -1,0 +1,28 @@
+<%- include('./partials/head'); %>
+
+<div class="container">
+
+    <form class="mainForm shadow" action="/" method="POST">
+        <h2 class="text-center">
+            <%= title %>
+        </h2>
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" name="username">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <input type="submit" name="submit" value="Log In" class="btn btn-success btn-sm"> 
+        <a class="text-muted ml-4" href="/signup">Sign Up ?</a>
+        <a class="text-success ml-4">
+            <% if( msg != ''){ %>
+                <%= msg %>
+                <% } %>
+        </a>
+    </form>
+
+</div>
+
+<%- include('./partials/scripts'); %>

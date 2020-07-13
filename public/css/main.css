@@ -1,0 +1,10 @@
+.mainForm{
+    margin: 3% auto;
+    width: 40rem;
+    padding: 5%;
+    background-color: rgb(243, 243, 243);
+}
+
+.nav-link{
+    margin-right: 40px;
+}
