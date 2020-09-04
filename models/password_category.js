@@ -1,7 +1,7 @@
 // getting-started.js
 const mongoose = require('mongoose');
 
-var conn = mongoose.connect('mongodb+srv://MyUsername:MyPassword@mycluster-rkncu.mongodb.net/pms?retryWrites=true&w=majority',
+var conn = mongoose.connect('Mongo db Uri',
  {useNewUrlParser: true , useCreateIndex:true, useUnifiedTopology: true}, 
     ()=>{console.log('MongoDb Connected ***')}
 );
